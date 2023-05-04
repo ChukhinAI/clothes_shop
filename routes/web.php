@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CatalogController;
+use pp\Http\Controllers\IndexController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,6 +18,9 @@ use App\Http\Controllers\CatalogController;
 Route::get('/', function () {
     return view('welcome');
 });
+
+// маршрут для главной страницы без указания метода
+Route::get('/', [IndexController::class])->name('index');
 
 /*
 Route::get('/catalog/index', [CatalogController::class, 'index'])->name('catalog.index');
