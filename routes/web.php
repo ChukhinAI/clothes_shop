@@ -20,7 +20,10 @@ Route::get('/', function () {
 });
 
 // маршрут для главной страницы без указания метода
-Route::get('/', [IndexController::class])->name('index');
+//Route::get('/', [IndexController::class, '__invoke'])->name('index'); // не понял, почему не сработало
+Route::get('/index', function () {
+    return view('index');
+});
 
 /*
 Route::get('/catalog/index', [CatalogController::class, 'index'])->name('catalog.index');
