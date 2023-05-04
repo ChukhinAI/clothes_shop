@@ -33,7 +33,7 @@
                     <a class="nav-link" href="#">Контакты</a>
                 </li>
             </ul>
-            <!-- Этот блок расположен справа -->
+            <!-- Этот блок расположен справа, но пока не работает -->
             <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search"
                        placeholder="Поиск по каталогу" aria-label="Search">
