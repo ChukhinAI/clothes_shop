@@ -13,5 +13,6 @@ class EncryptCookies extends Middleware
      */
     protected $except = [
         //
+        'basket_id' // чтобы видеть, что добавили в корзину, потом убрать
     ];
 }
